@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Splitter</h1>
+
+    <!-- Add Expense -->
+    <form id="expense-form">
+        <input type="text" id="title" placeholder="Expense Title" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Expense List -->
+    <ul id="expense-list"></ul>
+
+    <!-- Total -->
+    <h2>Total: ₹<span id="total">0</span></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
