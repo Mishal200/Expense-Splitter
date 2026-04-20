@@ -7,7 +7,7 @@ const amountInput = document.getElementById("amount");
 const list = document.getElementById("expense-list");
 const totalDisplay = document.getElementById("total");
 
-// Render expenses
+
 function renderExpenses() {
     list.innerHTML = "";
     let total = 0;
@@ -32,7 +32,7 @@ function renderExpenses() {
     localStorage.setItem("expenses", JSON.stringify(expenses));
 }
 
-// Add / Update expense
+
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -50,18 +50,18 @@ form.addEventListener("submit", function(e) {
     renderExpenses();
 });
 
-// Delete
+
 function deleteExpense(index) {
     expenses.splice(index, 1);
     renderExpenses();
 }
 
-// Edit
+
 function editExpense(index) {
     titleInput.value = expenses[index].title;
     amountInput.value = expenses[index].amount;
     editIndex = index;
 }
 
-// Load on start
+
 renderExpenses();
